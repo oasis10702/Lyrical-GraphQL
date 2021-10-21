@@ -3,7 +3,7 @@ import gql from 'graphql-tag';
 
 class SongList extends Component {
   render() {
-    return <div>SongList</div>;
+    return <div>SongList*</div>;
   }
 }
 

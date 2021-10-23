@@ -7,4 +7,12 @@ class SongList extends Component {
   }
 }
 
+const query = gql`
+  {
+    songs {
+      title
+    }
+  }
+`;
+
 export default SongList;

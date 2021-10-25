@@ -16,4 +16,4 @@ const query = gql`
   }
 `;
 
-export default SongList;
+export default graphql(query)(SongList);

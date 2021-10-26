@@ -4,6 +4,7 @@ import { graphql } from 'react-apollo';
 
 class SongList extends Component {
   render() {
+    console.log(this.props);
     return <div>SongList</div>;
   }
 }

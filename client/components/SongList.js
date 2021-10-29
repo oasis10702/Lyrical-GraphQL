@@ -7,7 +7,6 @@ class SongList extends Component {
     return <div>SongList</div>;
   }
 }
-
 const query = gql`
   {
     songs {

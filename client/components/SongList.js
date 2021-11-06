@@ -12,7 +12,7 @@ class SongList extends Component {
       );
     });
   }
-  // @TODO
+
   render() {
     if (this.props.data.loading) {
       return <div>Loading...</div>;

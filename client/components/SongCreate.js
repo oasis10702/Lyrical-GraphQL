@@ -5,7 +5,10 @@ class SongCreate extends Component {
     return (
       <div>
         <h3>Create a New Song</h3>
-        <form></form>
+        <form>
+          <label>Song Title</label>
+          <input />
+        </form>
       </div>
     );
   }

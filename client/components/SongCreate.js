@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import gql from 'graphql-tag';
 
 class SongCreate extends Component {
   constructor(props) {
@@ -23,5 +24,11 @@ class SongCreate extends Component {
     );
   }
 }
+
+const mutation = gql`
+  mutation {
+    addSong(title: '')
+  }
+`;
 
 export default SongCreate;

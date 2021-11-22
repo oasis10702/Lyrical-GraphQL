@@ -11,6 +11,8 @@ class SongCreate extends Component {
 
   onSubmit(event) {
     event.preventDefault();
+
+    console.log(this.props);
   }
 
   render() {

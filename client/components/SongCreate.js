@@ -12,7 +12,6 @@ class SongCreate extends Component {
 
   onSubmit(event) {
     event.preventDefault();
-
     this.props
       .mutate({
         variables: {

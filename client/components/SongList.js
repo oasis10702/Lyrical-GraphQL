@@ -30,7 +30,6 @@ class SongList extends Component {
   }
 }
 
-// @TODO
 const mutation = gql`
   mutation DeleteSong($id: ID) {
     deleteSong(id: $id) {
@@ -39,4 +38,4 @@ const mutation = gql`
   }
 `;
 
-export default graphql(query)(SongList);
+export default graphql(query, mutation)(SongList);

@@ -38,4 +38,4 @@ const mutation = gql`
   }
 `;
 
-export default graphql(query, mutation)(SongList);
+export default graphql(mutation)(graphql(query)(SongList));

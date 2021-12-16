@@ -9,6 +9,7 @@ class SongList extends Component {
       return (
         <li key={song.id} className="collection-item">
           {song.title}
+          {/* @TODO */}
           <i className="material-icons">delete</i>
         </li>
       );

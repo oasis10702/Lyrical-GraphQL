@@ -4,14 +4,14 @@ import { Link } from 'react-router';
 import query from '../queries/fetchSongs';
 
 class SongList extends Component {
-  onSongDelete() {}
+  onSongDelete(id) {}
 
   renderSongs() {
-    return this.props.data.songs.map(song => {
+    return this.props.data.songs.map(({ title, id }) => {
       return (
-        <li key={song.id} className="collection-item">
-          {song.title}
-          <i className="material-icons" onClick={() => this.onSongDelete()}>
+        <li key={id} className="collection-item">
+          {title}
+          <i className="material-icons" onClick={() => this.onSongDelete(id)}>
             delete
           </i>
         </li>

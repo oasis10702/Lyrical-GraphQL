@@ -7,6 +7,7 @@ class SongList extends Component {
   onSongDelete(id) {
     this.props.mutate({ variables: { id } });
   }
+
   renderSongs() {
     return this.props.data.songs.map(({ title, id }) => {
       return (

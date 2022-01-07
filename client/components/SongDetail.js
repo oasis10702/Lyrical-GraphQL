@@ -12,4 +12,4 @@ class SongDetail extends Component {
   }
 }
 
-export default SongDetail;
+export default graphql(fetchSong)(SongDetail);

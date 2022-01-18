@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 class LyricCreate extends Component {
   render() {
-    return {};
+    return (
+      <form>
+        <label>Add a Lyric</label>
+        <input />
+      </form>
+    );
   }
 }
 

@@ -4,14 +4,14 @@ class LyricCreate extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = { content: '' };
   }
 
   render() {
     return (
       <form>
         <label>Add a Lyric</label>
-        <input />
+        <input value={this.state.content} onChange={event => this.setState({ content: event.target.value })} />
       </form>
     );
   }

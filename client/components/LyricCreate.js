@@ -9,7 +9,6 @@ class LyricCreate extends Component {
 
   onSubmit(event) {
     event.preventDefault();
-
     // @TODO
   }
 

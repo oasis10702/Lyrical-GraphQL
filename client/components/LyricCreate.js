@@ -12,11 +12,10 @@ class LyricCreate extends Component {
   onSubmit(event) {
     event.preventDefault();
 
-    // @TODO
     this.props.mutation({
       variables: {
         content: this.state.content,
-        // songId:
+        songId: this.props.songId,
       },
     });
   }

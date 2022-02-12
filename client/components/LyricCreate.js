@@ -13,7 +13,7 @@ class LyricCreate extends Component {
     event.preventDefault();
 
     this.props
-      .mutation({
+      .mutate({
         variables: {
           content: this.state.content,
           songId: this.props.songId,

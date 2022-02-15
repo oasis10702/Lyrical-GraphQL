@@ -6,6 +6,7 @@ class LyricList extends Component {
       return (
         <li key={id} className="collection-item">
           {content}
+          <i className="material-icons">thumb_up</i>
         </li>
       );
     });
